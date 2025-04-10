@@ -16,7 +16,7 @@ public class BoardController {
     private BoardService bServ;
 
     @GetMapping("/board/write")
-    public ModelAndView findAll() {
+    public ModelAndView write() {
         return new ModelAndView("board/write");
     }
 
@@ -51,6 +51,7 @@ public class BoardController {
         bServ.delete(bno, password);
         return new ModelAndView("redirect:/");
     }
+
 }
 
 
