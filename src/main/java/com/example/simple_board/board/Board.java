@@ -1,8 +1,15 @@
 package com.example.simple_board.board;
 
-import java.time.LocalDate;
+import lombok.*;
+
 import java.time.LocalDateTime;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@ToString
 public class Board {
     private int bno;
     private String title;
